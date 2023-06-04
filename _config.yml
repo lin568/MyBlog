@@ -97,9 +97,28 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: yilia-plus
+theme: next
 
 deploy:
   type: git
   repository: git@github.com:lin568/lin568.github.io.git
   branch: main
+
+search:
+path: search.xml
+field: post
+format: html
+limit: 10000
+
+symbols_count_time:
+  # 每篇文章显示
+  symbols: true
+  time: true
+  # 文章底部显示
+  total_symbols: false  
+  total_time: false
+  # 是否统计代码块
+  exclude_codeblock: false
+  awl: 2
+  wpm: 275
+  suffix: "mins."
